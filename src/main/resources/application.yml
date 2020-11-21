@@ -1,0 +1,28 @@
+#配置项目访问的上下文
+server:
+  port: 8888
+  servlet:
+    context-path: /cc
+
+
+
+
+#连接数据库的四大参数
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/jpa?userUnicode=true&characterEncoding=utf8&userSSL=false
+    username: root
+    password: 123456
+  jpa:
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+
+
+
+
+
+
