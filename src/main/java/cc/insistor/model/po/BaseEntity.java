@@ -62,7 +62,7 @@ public class BaseEntity {
     /**
      * 创建时间
      */
-    @Temporal(TemporalType.TIMESTAMP)
+    @Temporal(TemporalType.DATE)
     @CreationTimestamp
     protected Date createTimestamp;
 

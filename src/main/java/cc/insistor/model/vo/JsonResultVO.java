@@ -10,13 +10,9 @@ import io.swagger.annotations.ApiModelProperty;
  * 异常信息
  *
  * 在项目中 当字段实体类为Long类型时 如果Long值超过前端js显示的长度范围时会导致前端回显错误
- *
  * 此时我们想到的解决方案是将Long值返回给前端时转为String，
- *
  * 但是我们又不想变更字段的类型，当然我们也不想额外添加新的字段。
- *
  * 这个时候我们可以用@JsonSerialize，在Json序列化的时候把Long自动转为String，
- *
  * 但是这里有个小坑，被转换的字段必须是包装类类型，否则会转换失败。
  *
  * JsonSerialize(using = ToStringSerializer.class)

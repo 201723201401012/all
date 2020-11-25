@@ -7,7 +7,7 @@ import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 
 /**
- * f
+ * 分页查询的页数和每页有多少条数据
  * @author cc
  */
 @ApiModel("分页查找")
